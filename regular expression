@@ -31,3 +31,22 @@ grep -G -E -F
 ####  regular expression example
 ls -l | grep '^a'
 grep 'test' aa bb cc ####在多个文件中查找字符串
+grep 'w\(es\)t.*\1' filename 
+grep 'w(es)t.*\1'  filename
+POSIX字符集是以[::】括起来的字符
+[:alnum:]
+[:alpha:]
+[:blank:]
+[:digit:]
+[:lower:]
+[:cntrl:]
+[:print:]
+[:punct:]
+[:space:]
+[:upper:]
+[:xdigit:]
+grep -E '[[:digit:]_]+' filename
+grep [^abc]hina
+\(ab\)\(cd\)[efg]*\1\2
+you|me
+(man|woman)+
