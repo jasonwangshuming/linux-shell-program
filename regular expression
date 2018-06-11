@@ -1,0 +1,33 @@
+#### regular expression (meta character ,general character)
+#### 用于匹配文本行的  grep
+#### 用于改变输入流的sed流编辑器
+#### 用于处理字符串的语言，如awk python perl Tcl
+#### 用于产看程序，或分页程序 more page less
+#### 文本编辑器 ed vi emacs vim
+\bhi\b 精确匹配hi                        \b 代表单词的开头或结尾
+\bhi\b.*\bLucy\b  匹配hi 后面跟着Luck     . 代表除换行符以外的任意字符  * 代表前面的内容可以连续重复任意次 \n 换行符
+0\d{2}-\d{8}    {}表示前面的字符出现的次数                      
+grep   {egrep fgerp} deprecated  BRE--基本正则表达式  ERE--扩展正则表达式
+^ 表示字符串的开始
+$ 表示字符串的结束
+. 匹配一个非换行符的字符串
+* 匹配零个或多个前面的字符
+[..] 匹配方括号里的任意一个字符，方括号中的-表示连续字符串
+\ 用于打开或关闭后续字符的特殊含义
+\(\)
+\n 重复在\(\)内的n个模式，n为1到9，
+x\{m,n\}
+x{m,n}
++
+?
+|
+()
+grep -G -E -F
+\<
+\>
+\w
+\W
+\b
+####  regular expression example
+ls -l | grep '^a'
+grep 'test' aa bb cc ####在多个文件中查找字符串
